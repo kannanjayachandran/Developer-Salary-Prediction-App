@@ -3,5 +3,4 @@ pandas
 matplotlib
 seaborn
 scikit-learn
-pickle = 0.7.5
 time
