@@ -34,6 +34,26 @@ def clean_education(x):
     return 'Less than a Bachelors'
 
 
+
+
+
+
+def main_data_explore():
+    df = pd.read_csv("./Data/survey_results_public.csv")
+
+    df = df[["Country", "EdLevel", "YearsCodePro", "ConvertedCompYearly", "DevType"]]
+
+
+
+
+
+
+
+
+
+
+
+
 @st.cache
 def load_data():
     df = pd.read_csv("./Data/survey_results_public.csv")
@@ -63,7 +83,7 @@ def show_explore_page():
 
 
     with st.spinner(text='Crunching the numbers...'):
-        time.sleep(3)
+        time.sleep(0.5)
         st.success('Done')
     
     st.title("Software Engineer Salary Prediction")
