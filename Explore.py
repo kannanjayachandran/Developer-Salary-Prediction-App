@@ -1,7 +1,5 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 import time
 
 
@@ -32,26 +30,6 @@ def clean_education(x):
     if 'Professional degree' in x or 'Other doctoral' in x:
         return 'Post grad'
     return 'Less than a Bachelors'
-
-
-
-
-
-
-def main_data_explore():
-    df = pd.read_csv("./Data/survey_results_public.csv")
-
-    df = df[["Country", "EdLevel", "YearsCodePro", "ConvertedCompYearly", "DevType"]]
-
-
-
-
-
-
-
-
-
-
 
 
 @st.cache
@@ -92,16 +70,6 @@ def show_explore_page():
 
     st.subheader("Country Wise Distribution of Software Engineers")
     st.bar_chart(data)
-    
-    # bar chart using seaborn
-    st.subheader("Country Wise Distribution of Software Engineers")
-    plt.figure(figsize=(10, 6))
-    sns.countplot(x="Country", data=df, )
-    st.pyplot()
-
-    plt.figure(figsize=(10, 6))
-    sns.histplot(df["Salary"], kde=True)
-    st.pyplot()
 
 
     
