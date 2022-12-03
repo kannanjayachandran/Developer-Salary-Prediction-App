@@ -56,7 +56,7 @@ df = load_data()
 
 def show_explore_page():
 
-    # surpress warnings
+    # suppress warnings
     st.set_option('deprecation.showPyplotGlobalUse', False)
 
 
