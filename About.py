@@ -9,8 +9,6 @@ def show_about_page():
     st.subheader("""Years of Experience""")
     st.subheader("""Education Level""")
 
-    
-    
     st.write("""### The data used for this project is from the Stack Overflow Developer Survey 2020. The data can be found [here](https://survey.stackoverflow.co/2022/ )""")
     
     st.write(
