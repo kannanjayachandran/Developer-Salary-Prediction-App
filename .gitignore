@@ -1,1 +1,14 @@
+# IDE files
 .vscode
+.idea
+
+# pycahce
+__pycache__
+
+# Notebook checkpoints
+.ipynb_checkpoints
+
+# output files
+*.pickle
+*.exe
+*.o
